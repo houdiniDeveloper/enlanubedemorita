@@ -95,41 +95,46 @@ body{
 
 .content-grilla{
     display: grid;
-    grid-template-columns: 1fr 1fr;  
+    grid-template-columns: 1fr;  
     margin : 0 auto;
     max-width: 80%; 
+    padding: 2%;
 }
 
 .fondo-grilla{
         position: relative;   
         display: inline-block;
     }
-    
-    .fondo-grilla img{
-        box-sizing: border-box;
+   
+     .fondo-grilla svg{
+        height: 300px;
+        width: 150%;    
+        filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));  
+    }
+    .fondo-grilla svg g{
         display: block;
-        max-width: 100%;
         height: auto;
-        padding: .5em;
+        fill: #48001E;
     }
     
     
     .texto-grilla h2{
-        font-size: 3em;
-        color: #DDDDDE;
-        border: 3px solid #DDDDDE;
+        font-size: 2em;
+      /*  color: #48001E;*/
+      color: #fff;
+        /*border: 3px solid #48001E;*/
         position: absolute;
         top: 50%;
-        left: 50%;
+        left: 80%;
         transform: translate(-50%, -50%);   
-        background: rgba(0, 0, 0, .5);
+       /* background: rgba(255, 255, 255, .5);*/
         padding: 10px;
+        z-index: 80;
         
     }
     
     .texto-grilla h2:hover{
         color: #DC93AF;
-        border: 3px solid #DC93AF;
     }
 .footer{
     display: grid;
@@ -150,13 +155,7 @@ body{
     
     .header{
         grid-template-columns: 60px 1fr;
-        background:rgba(220, 147, 175, .7);
-        justify-content: center;
-        align-content: center;
-        position: sticky;
-        top : 0px;
-        z-index: 100;
-        
+       
     }
     
     .header figure g{
@@ -183,13 +182,29 @@ body{
     .tipeo-cursor, #tipeo-contenedor  { 
         font-size: 1.8em;
        }
+    
        .texto-grilla h2{
-        font-size: 2em;
+        font-size: 1.5em;
+      /*  color: #48001E;*/
+      color: #fff;
+        /*border: 3px solid #48001E;*/
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);   
+       /* background: rgba(255, 255, 255, .5);*/
+        padding: 10px;
+        z-index: 80;
         
     }
+    
        .content-grilla{
         grid-template-columns: 1fr; 
         max-width: 90%; 
     }
      
+    .fondo-grilla svg{
+        height: 250px;
+        width: 120%;
+    } 
 }
