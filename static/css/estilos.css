@@ -136,6 +136,17 @@ body{
     .texto-grilla h2:hover{
         color: #DC93AF;
     }
+
+    .img-container{
+        margin: 10px;
+        display: grid;
+        grid-template-columns: repeat(8, 200px);
+        grid-gap: 10px;
+    }
+    .img-container img{
+        box-sizing: border-box;
+        max-width: 200px;
+    }
 .footer{
     display: grid;
     grid-area: f;
@@ -207,4 +218,13 @@ body{
         height: 250px;
         width: 120%;
     } 
+
+    .img-container{
+        grid-template-columns: repeat(2, 160px);
+        grid-gap: 8px;
+    }
+    .img-container img{
+        box-sizing: border-box;
+        max-width: 160px;
+    }
 }
